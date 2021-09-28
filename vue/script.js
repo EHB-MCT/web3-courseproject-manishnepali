@@ -1,17 +1,29 @@
 const app = Vue.createApp({
-template: '<h1> hello {{firstname}} </h1> <ul v-for="post in posts" v-bind:key="post.id"> <li>{{ post.title }}</li><p>{{ post.body }}</p></ul>',
+template: `<h1> {{title}} </h1> 
+<div id="content">
+<ul v-for="film in films" v-bind:key="film.id" id="title"> 
+
+<li><h3>{{ film.title }}</h3></li>  <img src={{film.url}}>
+ <p>{{ film.original_title_romanised }} // {{film.original_title}} </p>
+<p>{{ film.description}}</p>
+<button>add to watch later</button>
+</ul>
+</div>`,
 data(){
 
     return{
-        firstname : "stan",
-        posts: [],
+        title : "ghibli studio movielist",
+        films: [],
+       
     }
 },
 methods: {
     async getData() {
       try {
         let response = await fetch("http://jsonplaceholder.typicode.com/posts");
-        this.posts = await response.json();;
+        this.posts = await response.json();
+        let ghibli = await fetch("https://ghibliapi.herokuapp.com/films/")
+        this.films = await ghibli.json();
       } catch (error) {
         console.log(error);
       }
