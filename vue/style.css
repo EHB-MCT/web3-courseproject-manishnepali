@@ -1,0 +1,38 @@
+body{
+
+}
+    #nav{
+
+    }
+    #nav ul{
+
+   
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 50px 1fr;
+        grid-gap: 5px;
+        background-color: #89c4f4;
+        
+        
+    }
+
+    #nav li{
+        margin: 0% 5%;
+        padding: 5%;
+        font-size: 2em;
+        
+    }
+    #nav a{
+       color: white;
+       
+    }
+    #nav a:hover{
+color: black;
+    }
+    #app{
+ 
+
+    }
+
+

@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+ <link rel="stylesheet" href="style.css">
     
-    <title>vue worldÒ</title>
+    <title>vue world</title>
 </head>
 <body>
+    <div id="nav">
+        <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">not home</a></li>
+        </ul>
+    </div>
     <div id= "app">
-    <p> {{ content }}</p>
+        <!-- <div id="clint">
+            <img v-bind:src="image" >
+        </div>
+        <div id="intro">
+            <p> {{ content }}</p>
+            <p v-if="isClint">its clinteast wood</p>
+            <p v-else="isClint">its not him </p>
+        </div> -->
+    
 </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script src="https://unpkg.com/vue@next"></script>
 <script src="script.js"></script>
+</body>
+
 </html>
