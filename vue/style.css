@@ -1,19 +1,25 @@
 *{
+
+   
     list-style-type: none;
+}
+#logo{
+    width: 30%;
 }
     #nav{
         margin: 0;
+        background-color: #02ADEF;
 
     }
     #nav ul{
 
    
-      
+     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-row: 50px 1fr;
         grid-gap: 5px;
-        background-color: #89c4f4;
+        
         
         
     }
@@ -21,7 +27,7 @@
     #nav li{
         margin: 0% 5%;
         padding: 5%;
-        font-size: 2em;
+        font-size: 1.5em;
         
     }
     #nav a{
@@ -31,18 +37,44 @@
     #nav a:hover{
         color: black;
     }
+    #pagetitle{
+        text-align: center;
+        margin: 2.5%;
+      
+    }
     #content{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row: 50px 1fr;
-        grid-gap: 5px;
+        grid-gap: 15px;
         width: 100%;
+        margin-bottom: 2.5% ;
  
 
     }
-    #app{
- 
-
+    button {
+        display: inline-block;
+        border: none;
+        padding: 1em 2em;
+        margin: 0;
+        text-decoration: none;
+        background: #02ADEF;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        cursor: pointer;
+        text-align: center;
+        transition: 250ms ease-in-out, transform 150ms ease;
+        -webkit-appearance: none;
     }
+    
+    button:hover{
+        background: #3a7ccdd0;
+    }
+    
+
+    
+  
 
 

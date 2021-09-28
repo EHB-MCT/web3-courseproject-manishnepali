@@ -1,5 +1,5 @@
 const app = Vue.createApp({
-template: `<h1> {{title}} </h1> 
+template: `<h1 id="pagetitle"> {{title}} </h1> 
 <div id="content">
 <ul v-for="film in films" v-bind:key="film.id" id="title"> 
 
