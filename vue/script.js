@@ -33,7 +33,7 @@ methods: {
     },
     async addToWatch(){
       
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.films[event.target.value].title));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.films[1].title));
     }
   },
 
