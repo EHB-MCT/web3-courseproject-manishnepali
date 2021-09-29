@@ -1,3 +1,6 @@
+const STORAGE_KEY = "added to watchlist";
+
+
 const app = Vue.createApp({
 template: `<h1 id="pagetitle"> {{title}} </h1> 
 <div id="content">
@@ -6,7 +9,7 @@ template: `<h1 id="pagetitle"> {{title}} </h1>
 <li><h3>{{ film.title }}</h3></li>  <img src={{film.url}}>
  <p>{{ film.original_title_romanised }} // {{film.original_title}} </p>
 <p>{{ film.description}}</p>
-<button>add to watch later</button>
+<button v-on:click="addToWatch">add to watch later</button>
 </ul>
 </div>`,
 data(){
@@ -28,6 +31,10 @@ methods: {
         console.log(error);
       }
     },
+    async addToWatch(){
+      
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.films[event.target.value].title));
+    }
   },
 
   created() {
