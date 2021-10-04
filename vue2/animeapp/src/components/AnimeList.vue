@@ -4,8 +4,8 @@
 <ul v-for="anime in animes" :key="anime.id" :anime="anime" id="title">
 <li><h3>{{ anime.title }}</h3></li>
  <p>{{ anime.original_title_romanised }} // {{anime.original_title}} </p>
-<p>{{ anime.description}}</p>
-<Detail/>
+ <Detail @click="hide()"/>
+<p v-if="show">{{ anime.description}}</p>
 </ul>
 </div>
 </div>
@@ -19,7 +19,15 @@ export default {
     Detail,
   },
   data() {
-    return { animes: [] };
+    return {
+      animes: [],
+      show: false,
+    };
+  },
+  hide() {
+    return {
+      show: true,
+    };
   },
   created() {
     axios
