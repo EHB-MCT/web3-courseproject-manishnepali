@@ -6,11 +6,10 @@
 #logo{
     width: 30%;
 }
-    #nav{
-        margin: 0;
-        background-color: #02ADEF;
-
-    }
+ #nav{
+    margin: 0;
+    background-color: #02ADEF;
+}
     #nav ul{
 
    
@@ -23,7 +22,6 @@
         
         
     }
-
     #nav li{
         margin: 0% 5%;
         padding: 5%;
@@ -68,7 +66,6 @@
         transition: 250ms ease-in-out, transform 150ms ease;
         -webkit-appearance: none;
     }
-    
     button:hover{
         background: #3a7ccdd0;
     }

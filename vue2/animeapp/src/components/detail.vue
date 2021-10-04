@@ -1,13 +1,16 @@
 <template>
   <div class="detail">
-    <button>detail</button>
+    <button>show descripttion</button>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'detail',
-  
+  setup() {
+    return {
+    };
+  },
 };
 </script>
 
@@ -21,5 +24,8 @@ height: 70%;
 }
 #big{
   width: 30%;
+}
+p{
+  color: red;
 }
 </style>

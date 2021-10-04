@@ -12,6 +12,8 @@ template: `<h1 id="pagetitle"> {{title}} </h1>
 <button v-on:click="addToWatch">add to watch later</button>
 </ul>
 </div>`,
+
+
 data(){
 
     return{

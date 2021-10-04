@@ -1,22 +1,20 @@
 <template>
   <div class="home">
-    <div class ="anime">
-      <img src="../assets/anime.jpeg" id="big">
-    </div>
-    <my-button/>
+    <AnimeList/>
   </div>
 </template>
 
 <script>
-import MyButton from './detail.vue'
+import AnimeList from './AnimeList.vue';
+
 export default {
-  name: 'animeapp',
+  name: 'ghibli movies',
   props: {
     msg: String,
   },
   components: {
-    MyButton
-  }
+    AnimeList,
+  },
 };
 </script>
 

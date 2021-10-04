@@ -7,7 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.16"
+    "axios": "^0.22.0",
+    "vue": "^3.2.16",
+    "vue-axios": "^3.3.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.2",

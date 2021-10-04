@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import MyButton from './Button.vue'
+import AnimeList from './Button.vue'
 
 
 defineProps({
@@ -20,6 +21,7 @@ const count = ref(0)
     option
   </button>
   <MyButton /> 
+  <Animelist />
 </template>
 
 <style scoped>

@@ -2,7 +2,7 @@
 <header>
   <nav>
     <ul>
-      <li id="logoList"><img src="./assets/logo.png" id="logo">
+      <li id="logoList"><img src="./assets/ghibli.png" id="logo">
       animelist</li>
     </ul>
   </nav>
