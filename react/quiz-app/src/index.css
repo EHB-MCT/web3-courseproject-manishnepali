@@ -17,25 +17,21 @@ code {
   margin: 1%;
   border-radius: 20px;
 }
-#homepage {
-background-color: #bfbfbf;
-border-radius: 30px;
-width: 50%;
-margin-left: 20%;
-margin-top: 10%;
-padding: 5%;
-opacity: 0.9;
-}
-#homepage:hover{
-  transition: 0.3s;
-  opacity: 1;
-}
 .quiz_form {
-  max-width: 80%;
-  margin: 2% auto;
-  padding: 3% 6%;
-  background: #f4f7f8;
-  border-radius: 8px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  padding: 5%;
+  margin-top: 2%;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.9);
+  border-radius: 10px;
+  color: white;
 }
 .quiz_form h3 {
   margin: 0 0 2% 0;
@@ -48,7 +44,7 @@ opacity: 0.9;
   border-bottom: 2px solid gray;
   outline: 0;
   font-size: 1.3rem;
-  color: black;
+  color: white;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -63,7 +59,7 @@ opacity: 0.9;
 input[type=submit] {
   width: 100%;
   background-color: #90c695;
-  color: black;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;

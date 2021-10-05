@@ -11,7 +11,7 @@ height: 100vh;
 }
 #nav{
   top: 0;
-  background-color: #02ADEF;
+  background-color: black;
 }
   #nav ul{
     top: 0;
@@ -35,7 +35,8 @@ height: 100vh;
      
   }
   #nav a:hover{
-      color: black;
+      color: orange;
+      
   }
 
 
