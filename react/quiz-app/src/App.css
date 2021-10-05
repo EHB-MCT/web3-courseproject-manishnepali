@@ -8,7 +8,34 @@
   width: 100vw;
 height: 100vh;
   z-index: -1;
-
 }
+#nav{
+  top: 0;
+  background-color: #02ADEF;
+}
+  #nav ul{
+    top: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row: 50px 1fr;
+      grid-gap: 5px;
+      
+      
+      
+  }
+  #nav li{
+    list-style: none;
+      margin: 0% 5%;
+      padding: 5%;
+      font-size: 1.5em;
+      
+  }
+  #nav a{
+     color: white;
+     
+  }
+  #nav a:hover{
+      color: black;
+  }
 
 
