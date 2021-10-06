@@ -5,6 +5,9 @@ import HomePage from './components/homepage';
 import quiz from './assets/quiz.jpeg'
 import './App.css';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import QuizVragen from './quiz_vragen.json'
+
+
 function App() {
   return (
     <Router>
