@@ -1,9 +1,38 @@
 [
     {
-        "vraag": "wat is 1 + 1",
-        "antwoorden":[
-            
-        ]
-
+        "id": 1,
+        "vraag": "vraag1",
+        "antwoord1": ["antwoord1", false],
+        "antwoord2": ["antwoord1", false],
+        "antwoord3": ["antwoord1", true]
+    
+        
+    },
+    {
+        "id": 1,
+        "vraag": "vraag2",
+        "antwoord1": ["antwoord1", false],
+        "antwoord2": ["antwoord2", false],
+        "antwoord3": ["antwoord3", true]
+    
+        
+    } ,
+    {
+        "id": 1,
+        "vraag": "vraag3",
+        "antwoord1": ["antwoord1", false],
+        "antwoord2": ["antwoord2", false],
+        "antwoord3": ["antwoord3", true]
+    
+        
+    },
+     {
+        "id": 1,
+        "vraag": "vraag4",
+        "antwoord1": ["antwoord1", false],
+        "antwoord2": ["antwoord2", false],
+        "antwoord3": ["antwoord3", true]
+    
+        
     }
 ]
