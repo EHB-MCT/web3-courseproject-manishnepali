@@ -2,7 +2,7 @@ import React, {Component, useState, useEffect} from 'react';
 import Axios from 'axios';
 import QuizVragen from '../quiz_vragen.json'
 
-const fs = require("fs")
+
 
 function DocentForm() {
     const[quiz, setQuiz] = useState({
@@ -45,6 +45,7 @@ function handle(e) {
 
 function submit(e){
     e.preventDefault();
+    setShow(false);
     let JUIST_ANWOORD = document.querySelector('input[name="juisteantwoord"]:checked').value;
     localStorage.setItem("vraag",quiz.vraag);
     localStorage.setItem("antwoord1",quiz.antwoord1);
@@ -68,12 +69,15 @@ function submit(e){
 //     }
 // }
 
-
+const [showDocent, setShow] = useState(true);
     return(
-        <div class="quiz_form">
       
-
-            <form onSubmit={(e)=> submit(e)}>
+            
+           <div class="quiz_form"> 
+   
+      {
+       
+       showDocent? <form onSubmit={(e)=> submit(e)}>
                 
             <input onChange={(e) => handle(e)} id="vraag" value={quiz.vraag} placeholder="voeg de vraag toe" type="text"/>
             <span class="radio_btn">
@@ -90,9 +94,10 @@ function submit(e){
 
                 <input onChange={(e) => handle(e)} id="antwoord3" value={quiz.antwoord3} placeholder="voeg een antwoord toe" type="text"/>
                 </span>
-            </form>
+            </form> :null
+}
             <button class="submit" onClick={submit}>submit</button>
-        </div>
+        </div> 
     )
 }
 

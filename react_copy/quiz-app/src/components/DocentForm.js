@@ -2,7 +2,7 @@ import React, {Component, useState, useEffect} from 'react';
 import Axios from 'axios';
 import QuizVragen from '../quiz_vragen.json'
 
-const fs = require("fs")
+
 
 function DocentForm() {
     const[quiz, setQuiz] = useState({
@@ -28,45 +28,26 @@ function handle(e) {
     console.log(newQuiz)
 }
 
-// function submit(e) {
-//     e.preventDefault();
-//      Axios.post("/api", {
-//         vraag : quiz.vraag,
-//         antwoord1 : quiz.antwoord1,
-//         antwoord2 : quiz.antwoord2,
-//         antwoord3 : quiz.antwoord3
-//     } )
-//     .then(response =>{
-//         console.log(response.quiz);
-//         fs.appendFile("vragen.json",response.quiz.vraag)
-//       })
-// }
-
-
-function submit(e){
+function submit(e) {
     e.preventDefault();
     let JUIST_ANWOORD = document.querySelector('input[name="juisteantwoord"]:checked').value;
-    localStorage.setItem("vraag",quiz.vraag);
-    localStorage.setItem("antwoord1",quiz.antwoord1);
-    localStorage.setItem("antwoord2",quiz.antwoord2);
-    localStorage.setItem("antwoord3",quiz.antwoord3);
-    localStorage.setItem("juiste_antwoord", JUIST_ANWOORD);
-    // isTrue();
+    // Axios.get("/api").then(function(response){
+    //     console.log(response);
+    // });
+     Axios.post("/quiz", {
+        "vraag" : quiz.vraag,
+        "antwoord1" : quiz.antwoord1,
+        "antwoord2" : quiz.antwoord2,
+        "antwoord3" : quiz.antwoord3
+    } )
+    .then(response =>{
+        console.log(response.quiz);
+      })
 }
 
-// function isTrue(){
-//     let JUIST_ANWOORD ="";
-//     if(document.getElementById('ant1').checked){
-//         console.log(quiz.antwoord1);
-//         JUIST_ANWOORD = quiz.antwoord1;
-//     }else if(document.getElementById('ant2').checked){
-//         console.log(quiz.antwoord2);
-//         JUIST_ANWOORD = quiz.antwoord2;
-//     }else{
-//         console.log(quiz.antwoord3);
-//         JUIST_ANWOORD = quiz.antwoord3;
-//     }
-// }
+
+
+
 
 
     return(
