@@ -116,7 +116,7 @@ app.use('/api', wRouter);
 
   });
 //post new gegevens inn api (had eerst perongeluk verwijderd)
-wRouter.route('/mynewworkouts')
+wRouter.route('/myquiz')
 .post((req, res) => {
     collection = db.collection("workout");
     collection.insertOne(req.body).then(
