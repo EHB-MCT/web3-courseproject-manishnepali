@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExploreComponent } from './explore/explore.component';
 import { HomeComponent } from './home/home.component';
+import { ProgramingComponent } from './programing/programing.component'
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   { path: '', redirectTo:'home', pathMatch: 'full' },
+  {path: 'programing', component: ProgramingComponent}
 ];
 
 @NgModule({

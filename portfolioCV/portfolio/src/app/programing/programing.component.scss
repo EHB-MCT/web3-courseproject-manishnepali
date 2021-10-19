@@ -1,0 +1,44 @@
+body {
+    height: 90vh;
+    
+        a{
+            text-decoration:none
+        }
+        p {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 3em;
+            
+           
+        }
+   
+        
+        
+    video {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        transform: translate(-50% -50%);
+        height: 90vh;
+        opacity: 98%;
+    }
+    #programing {
+    position: absolute;
+    margin-left: 42.5%;
+    margin-top: 10%;
+        ul{
+            li{
+                list-style: none;
+                p:hover{
+                    transform: scale(2, 2);
+                    transition-duration: 500ms;
+                    cursor: none;
+                }
+            }
+        }
+ 
+       
+    }
+    
+}
