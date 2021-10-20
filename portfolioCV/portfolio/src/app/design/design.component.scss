@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    height: 90vh;
+#slider{
+    overflow-y: scroll;
+    
+    display:grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-column-gap: 5%;
+        align-items: center;
+     
+    li{
+        margin: 2.5%;
+        padding: 10%;
+        align-items: center;
+    list-style: none;
+    border: honeydew;
+    border-style: solid;}
+    height: 100%;
+    
+    h3{
+        align-items: center;
+        color: white;
+        font-size: 1.6em;
+    }
+    img{
+        align-items: center;
+  
+    width:40%;}
+    
+    li:hover{
+        filter: invert(100%) !important;
+        img{
+            transform: scale(3, 3);
+            transform-origin: 0% 100%;
+            transition-duration: 500ms;
+            cursor: none;
+        }
+    }
+   
+
+}
+}

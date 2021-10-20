@@ -1,4 +1,16 @@
-<p>design works!</p>
 
+<body>
+    
 
+<ol id="slider">
+  
+<li *ngFor="let photo of photos">
+    <span id="img_container">
+    <h3>{{photo.info}}</h3>
+    <img src={{photo.url}} alt="">
+</span>
+</li>
+
+</ol>
+</body>
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import Designs from '../design.json';
+import {DesignList} from '../design-feed';
+
 
 @Component({
   selector: 'app-design',
@@ -11,12 +12,8 @@ export class DesignComponent implements OnInit {
   constructor() { 
   
   }
-  slideConfig = {}
- designs : {
-   "../../assets/potfolio/2.png"
-   
+ photos = DesignList;
 
- }
   
   ngOnInit(): void {
     
