@@ -32,6 +32,8 @@ function App() {
         
          <Suspense fallback={null}>
         <Model />
+        <Model position={[0, 0, 0]} />
+        <Model position={[10, 0, -10]} />
       </Suspense>
         
       </Canvas>
