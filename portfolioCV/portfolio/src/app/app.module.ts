@@ -10,6 +10,8 @@ import { ExploreComponent } from './explore/explore.component';
 import { ProgramingComponent } from './programing/programing.component';
 import { FooterComponent } from './footer/footer.component';
 import { DesignComponent } from './design/design.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DesignComponent } from './design/design.component';
     ExploreComponent,
     ProgramingComponent,
     FooterComponent,
-    DesignComponent
+    DesignComponent,
+    AboutmeComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
