@@ -19,8 +19,8 @@ html {
                 1px 1px 0 rgba(255, 255, 255, 0.55),
                 0 1px 3px white;
   overflow: hidden;
-  color: #191919;
-  background-color: azure;
+  color: #000000;
+  background-color: white;
 }
 
 button {
@@ -64,8 +64,8 @@ button {
 }
 
 .card {
-  background-color: #f4f1eb;
-  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-color: #2e3131;
+
   height: 50%;
   width: 35%;
   margin: 20vh auto 0 auto;
@@ -80,7 +80,7 @@ button {
 .card:hover {
   cursor: pointer;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(10px);
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, .4);
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 1);
 }
 
 .card:focus {
@@ -103,7 +103,7 @@ button {
   content: "";
   position: absolute;
   display: block;
-  background-color: grey;
+  background-color: #2e3131;
   transition: transform .4s ease,
               height .4s ease,
               width .4s ease;
@@ -143,5 +143,6 @@ button {
 }
 
 p {
+    color: #fff;
   margin: 0;
 }
