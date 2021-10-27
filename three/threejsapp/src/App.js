@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as THREE from "three";
 import "./App.css";
@@ -9,20 +9,12 @@ import { Suspense } from 'react';
 
 
 const CameraController = () => {
-  const { camera, gl } = useThree();
-  useEffect(
-     () => {
-        const controls = new OrbitControls(camera, gl.domElement);
-        controls.minDistance = 3;
-        controls.maxDistance = 20;
-        return () => {
-          controls.dispose();
-        };
-     },
-     [camera, gl]
-  );
-  return null;
+  const { camera, mouse } = useThree();
+  const vec = new THREE.Vector3()
+  return useFrame( () => camera.position.lerp(vec.set(mouse.x * 1.2, mouse.y * 1.2 , 5), 0.04))
 };
+
+
 function App() {
   return (
     <Canvas>
