@@ -9,9 +9,20 @@ import { Suspense } from 'react';
 
 
 const CameraController = () => {
-  const { camera, mouse } = useThree();
-  const vec = new THREE.Vector3()
-  return useFrame( () => camera.position.lerp(vec.set(mouse.x * 1.2, mouse.y * 1.2 , 5), 0.04))
+  const { camera, gl } = useThree();
+  useEffect(
+         () => {
+            const controls = new OrbitControls(camera, gl.domElement);
+            controls.minDistance = 3;
+            controls.maxDistance = 20;
+            return () => {
+              controls.dispose();
+            };
+         },
+         [camera, gl]
+      );
+      return null;
+    
 };
 
 
@@ -24,7 +35,8 @@ function App() {
          <spotLight intensity={0.2} position={[9, 20, 80]} />
         
          <Suspense fallback={null}>
-        <Model2 camera={{ fov: 75, position: [5, 0, 7] }} />
+           <Model position={0, 0, 0} /> 
+        <Model2  position={0, -3, 0}/>
         
       </Suspense>
         
@@ -32,44 +44,44 @@ function App() {
   );
 }
 
-
 function Model({ ...props }) {
-
-
   const group = useRef()
-  const { nodes, materials } = useGLTF('/Predator_s.glb')
+  const { nodes, materials } = useGLTF('/vierge.glb')
   useFrame(() => {
  
-      group.current.rotation.y += 0.025;
-    
-  });
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <group scale={[0.22, 0.22, 0.22]}>
-        
-        <mesh geometry={nodes.mesh0.geometry} material={materials.cabeza}  />
-        <mesh geometry={nodes.mesh0_dat_polySurface13_1.geometry} material={materials.cuerpo} />
-        <mesh geometry={nodes.mesh0_1.geometry} material={materials.casco} />
-      </group>
-    </group>
-  )
-}
-
-useGLTF.preload('/Predator_s.glb')
-
-function Model2({ ...props }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/scene.gltf')
-  useFrame(() => {
- 
-    group.current.rotation.z += -0.0025;
+    group.current.rotation.y += 0.025;
   
 });
   return (
     <group ref={group} {...props} dispose={null}>
+      <mesh
+        geometry={nodes['default'].geometry}
+        material={materials.SAVE_REALITY_VIERGE_Mod_le_1_u1_v1}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+      <mesh
+        geometry={nodes.Object001.geometry}
+        material={materials['Material #25']}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+    </group>
+  )
+}
+
+useGLTF.preload('/vierge.glb')
+
+function Model2({ ...props }) {
+  const group = useRef()
+  const { nodes, materials } = useGLTF('/scene.gltf')
+ 
+
+  return (
+    <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[-0.65, 0.32, -18.9]} rotation={[-Math.PI / 3.9, 0, 0]} scale={0.08}>
+          <group position={[0.3,-0.3,0]} rotation={[-Math.PI / 1.99, 0, 3]} scale={0.01}>
             <mesh geometry={nodes['Dragon_Balls_07_-_Default_0'].geometry} material={materials['07_-_Default']} />
             <mesh geometry={nodes['Dragon_Balls_09_-_Default_0'].geometry} material={materials['09_-_Default']} />
             <mesh geometry={nodes['Dragon_Balls_08_-_Default_0'].geometry} material={materials['08_-_Default']} />
