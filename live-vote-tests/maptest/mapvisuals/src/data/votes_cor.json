@@ -1,2 +1,15 @@
+[{
+    "id": 1,
+    "longitude": 4.351697,
+      "latitude": 50.8465573
+},
 {
-}
+    "id": 2,
+    "longitude": 4.5,
+      "latitude": 50.6
+},
+{
+    "id": 3,
+    "longitude": 4.1,
+      "latitude": 50.3
+}]
