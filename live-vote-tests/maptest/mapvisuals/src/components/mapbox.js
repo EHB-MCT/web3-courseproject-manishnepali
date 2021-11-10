@@ -54,11 +54,7 @@ const bounds = [
             </button>
             </Marker>
         ))}
-        <Marker latitude={50.8465573} longitude={4.351697}>
-            <button class="marker_btn">
-                <img src={Pin} />
-            </button>
-        </Marker>
+      
         </ReactMapGL>
 
     </div>
