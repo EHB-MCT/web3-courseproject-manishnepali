@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Pin from '../assets/pin.svg'
 import ReactMapGL,  {FlyToInterpolator, Marker} from 'react-map-gl';
 import Votes from '../data/votes_cor.json'
+import P5 from './P5';
 
 
 
@@ -29,7 +30,7 @@ const bounds = [
       ...viewport,
       longitude: 4.351697,
       latitude: 50.8465573,
-      zoom: 7,
+      zoom: 12,
       transitionDuration: 5000,
       transitionInterpolator: new FlyToInterpolator(),
       
@@ -37,10 +38,12 @@ const bounds = [
   };
   return (
       <div>
+        
     <button onClick={goToBrussel}>Brussel</button>
     <ReactMapGL
     
-    mapStyle="mapbox://styles/manishnepali/ckvtkgrx423me14t72cizk5n9"
+    // mapStyle="mapbox://styles/manishnepali/ckvtkgrx423me14t72cizk5n9"
+    mapStyle="mapbox://styles/manishnepali/ckvtj3blp0qq014nml8y26b70"
     mapboxApiAccessToken={"pk.eyJ1IjoibWFuaXNobmVwYWxpIiwiYSI6ImNrdWNubDZ2cjEyNzEydW1va3VhMXIycDgifQ.n2XtlNGQ4lDXAJt65-Db3w"}
       {...viewport}
       onViewportChange={nextViewport => setViewport(nextViewport)}
@@ -49,9 +52,9 @@ const bounds = [
             <Marker key={vote.id}
             latitude={vote.latitude}
             longitude={vote.longitude}>
-                <button class="marker_btn">
-                <img src={Pin} />
-            </button>
+    
+                <P5 />
+            
             </Marker>
         ))}
       
