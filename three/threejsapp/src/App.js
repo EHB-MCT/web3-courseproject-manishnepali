@@ -39,8 +39,11 @@ function App() {
         <Model2  position={0, -3, 0}/>
         
       </Suspense>
-        
+      <div>
+        <p>man</p>
+        </div>
       </Canvas>
+      
   );
 }
 
