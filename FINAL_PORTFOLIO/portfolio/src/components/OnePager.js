@@ -2,7 +2,7 @@ import '../App.css';
 import programing from '../assets/programing.jpeg'
 import design from '../assets/design.jpeg'
 import backgroundBsc from '../assets/backgroundBsc.jpeg'
-import artwork from '../assets/artwork.jpeg'
+import artwork from '../assets/artwork.webp'
 import {useState} from 'react'
 
 function OnePager() {
