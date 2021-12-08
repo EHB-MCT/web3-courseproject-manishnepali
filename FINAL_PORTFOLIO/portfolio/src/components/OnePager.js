@@ -13,7 +13,8 @@ const [color, setColor] = useState('#000000');
     return (
       <div className="OnePager">
           <div id="nameCard" 
-          style={{backgroundImage: `url(${image})`}}>
+          style={{backgroundImage: `url(${image})`,
+          transition: `0.5s`}}>
        <h1 id="naam">Manish Nepali</h1>
     
       <h3 class="info" 

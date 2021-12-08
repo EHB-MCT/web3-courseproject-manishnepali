@@ -1,4 +1,6 @@
 import OnePager from './components/OnePager'
+import Aboutme from './components/Aboutme';
+
 import './App.css';
 
 
@@ -9,6 +11,7 @@ function App() {
     
                 
      <OnePager />
+     <Aboutme />
     </div>
   );
 }

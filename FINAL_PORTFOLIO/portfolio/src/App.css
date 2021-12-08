@@ -4,6 +4,8 @@
 .OnePager{
   height: 100vh;
   background-color: #e2f1f8;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #naam{
   font-family: cooper-black-std,serif;
