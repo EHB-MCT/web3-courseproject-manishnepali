@@ -1,6 +1,8 @@
 import OnePager from './components/OnePager'
 import Aboutme from './components/Aboutme';
-
+import Mypassion from './components/Mypassion'
+import Contact from './components/Contact'
+import Projects from './components/Projects';
 import './App.css';
 
 
@@ -12,6 +14,9 @@ function App() {
                 
      <OnePager />
      <Aboutme />
+     <Mypassion />
+     <Projects />
+     <Contact />
     </div>
   );
 }

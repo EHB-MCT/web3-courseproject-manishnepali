@@ -28,7 +28,6 @@ const [color, setColor] = useState('#000000');
         onMouseEnter={()=>{ setImage(artwork)}}
         onMouseLeave={()=>{ setImage(backgroundBsc)}}>artist</h3>
         </div>
-       
         <div id="nav">
             <ul>
                 <li >About me</li>
