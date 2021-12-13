@@ -1,46 +1,34 @@
 <template>
- <carosel> 
-   <caroselsliders v-for="(slide, index) in slides" 
-   :key="slide" 
-   :index="index"
-   :visibleSlide="visibleSlide">
-     <img :src="slide" alt="">
-   </caroselsliders>
- </carosel>
+<link rel="stylesheet" href="https://use.typekit.net/ljg4uqb.css" />
+<div>
+<artlist class="artlist"/>
+</div>
 
 </template>
 
 <script>
-import Carosel from './components/carosel.vue'
-import Caroselsliders from './components/caroselsliders.vue'
+import Artlist from './components/Artlist.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    Carosel,
-    Caroselsliders
+    Artlist
+
   },
   data() {
     return{
-      slides: [
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700",
-          "https://picsum.photos/id/237/700"
-      ],
-      visibleSlide : 0,
+
     }
-  }
+  },
+  
 }
 </script>
 
 <style>
-#app {
- 
+.artlist{
+  height:30%;
 }
 
 </style>
