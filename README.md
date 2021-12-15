@@ -1,22 +1,18 @@
 # web3-courseproject-manishnepali
 
-<!-- # const CameraController = () => {
-# const { camera, gl } = useThree();
-useEffect(
-//      () => {
-//         const controls = new OrbitControls(camera, gl.domElement);
-//         controls.minDistance = 3;
-//         controls.maxDistance = 20;
-//         return () => {
-//           controls.dispose();
-//         };
-//      },
-//      [camera, gl]
-//   );
-//   return null;
-// }; -->
-<!-- const CameraController = () => {
-  const { camera, mouse } = useThree();
-  const vec = new THREE.Vector3()
-  return useFrame( () => camera.position.lerp(vec.set(mouse.x * 1.2, mouse.y * 1.2 , 5), 0.04))
-}; -->
+Sites made by me
+
+https://react-taak-manish.web.app/
+https://instagram-app-a7220.web.app
+frontend: https://web2-course-project-fnt-manish.herokuapp.com/index.html
+Backend: https://web2-course-project-api-manish.herokuapp.com/
+https://youtu.be/se12txTbyhc
+Portfolio https://portfolio-69033.web.app/home
+
+Vue
+https://dazzling-raman-c2e46b.netlify.app/
+https://reverent-colden-99ef89.netlify.app
+
+React
+https://silly-swanson-359788.netlify.app/
+
