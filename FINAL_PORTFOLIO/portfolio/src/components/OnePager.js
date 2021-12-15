@@ -5,7 +5,8 @@ import backgroundBsc from '../assets/backgroundBsc.jpeg';
 import artwork from '../assets/artwork.webp';
 import {useState} from 'react';
 import Aboutme from './Aboutme';
-import MySkills from './MySkills'
+import MySkills from './MySkills';
+import React, { PureComponent } from 'react';
 
 function OnePager() {
 const [image, setImage] = useState(backgroundBsc);
