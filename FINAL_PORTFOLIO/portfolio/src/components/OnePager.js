@@ -1,9 +1,11 @@
 import '../App.css';
-import programing from '../assets/programing.jpeg'
-import design from '../assets/design.jpeg'
-import backgroundBsc from '../assets/backgroundBsc.jpeg'
-import artwork from '../assets/artwork.webp'
-import {useState} from 'react'
+import programing from '../assets/programing.jpeg';
+import design from '../assets/design.jpeg';
+import backgroundBsc from '../assets/backgroundBsc.jpeg';
+import artwork from '../assets/artwork.webp';
+import {useState} from 'react';
+import Aboutme from './Aboutme';
+import MySkills from './MySkills'
 
 function OnePager() {
 const [image, setImage] = useState(backgroundBsc);
@@ -26,17 +28,20 @@ const [color, setColor] = useState('#000000');
         onMouseLeave={()=>{ setImage(backgroundBsc)}}>Web designer</h3>
         <h3 class="info"
         onMouseEnter={()=>{ setImage(artwork)}}
-        onMouseLeave={()=>{ setImage(backgroundBsc)}}>artist</h3>
+        onMouseLeave={()=>{ setImage(backgroundBsc)}}>adobe designer</h3>
         </div>
         <div id="nav">
             <ul>
                 <li >About me</li>
-                <li>My passions</li>
+                <li>My skills</li>
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>
         </div>
+        <Aboutme />
+        <MySkills />
       </div>
+      
     );
   }
   

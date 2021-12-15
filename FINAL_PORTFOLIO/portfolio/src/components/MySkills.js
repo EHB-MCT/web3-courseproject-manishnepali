@@ -1,13 +1,13 @@
 import '../App.css';
 
 
-function Mypassion() {
+function MySkills() {
   return (
-    <div className="mypassion">
+    <div className="myskills">
      <div className="OnePager">
      </div>
     </div>
   );
 }
 
-export default Mypassion;
+export default MySkills;
