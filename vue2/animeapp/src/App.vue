@@ -1,16 +1,6 @@
 <template>
-<header>
-  <nav>
-    <ul>
-      <li id="logoList"><img src="./assets/ghibli.png" id="logo">
-      animelist</li>
-    </ul>
-  </nav>
-</header>
-  <main>
-  <HomePage/>
-</main>
-
+<img src="./assets/ghibli.png" id="logo">
+<HomePage/>
 </template>
 <script>
 import HomePage from './components/HomePage.vue';
@@ -32,13 +22,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   color: white;
-  margin-top:20%;
+  display: flex;
+  justify-content: center;
+
 }
-nav{
-  overflow: hidden;
-  background-color: #333;
+#logo{
+  top:0;
+  left: 0;
   position: fixed;
-  top: 0;
-  width: 100%;
+  width: 10%;
 }
 </style>
