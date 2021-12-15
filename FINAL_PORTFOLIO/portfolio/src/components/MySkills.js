@@ -1,5 +1,5 @@
 import '../App.css';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer,LineChart  } from 'recharts';
 import { PureComponent } from 'react';
 
 
@@ -31,7 +31,7 @@ function MySkills(){
      <div className="OnePager"
      style={{backgroundColor: '#6c7a89'}}>
       <h1>My skills</h1>
-
+   
      <PieChart width={1200} height={500} id="chart">
         <Pie
           data={data}
@@ -43,13 +43,17 @@ function MySkills(){
           paddingAngle={5}
           dataKey="value"
           label={renderLabel}
+          
         >
+         
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               
               
           ))}
+          
         </Pie>
+        
         <Pie
           data={dataAdobe}
           cx={950}
@@ -62,7 +66,7 @@ function MySkills(){
           label={renderLabel}
         >
           {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={ColorsAdobe[index % ColorsAdobe.length]} />
+            <Cell key={`cell-${index}`} fill={ColorsAdobe[index % ColorsAdobe.length]} id="cell"/>
               
               
           ))}

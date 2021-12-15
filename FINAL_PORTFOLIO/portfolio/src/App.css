@@ -87,3 +87,15 @@ text-align: justify;
   color: green;
   cursor: pointer;
 }
+#cell{
+  font-family: gopher, sans-serif;
+  line-height: 2;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+#frontend_title {
+
+}
+#adobe_title {
+
+}
