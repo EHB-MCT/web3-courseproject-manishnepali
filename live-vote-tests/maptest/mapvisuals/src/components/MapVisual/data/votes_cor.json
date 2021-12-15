@@ -1,0 +1,45 @@
+[{
+    "id": 1,
+    "longitude": 4.351697,
+      "latitude": 50.8465573
+},
+{
+    "id": 2,
+    "longitude": 4.5,
+      "latitude": 50.6
+},
+{
+    "id": 3,
+    "longitude": 4.1,
+      "latitude": 50.3
+},
+{
+  "id": 4,
+  "longitude": 4.451697,
+    "latitude": 50.9465573
+},
+{
+  "id": 5,
+  "longitude": 4.2,
+    "latitude": 50.1
+},
+{
+  "id": 6,
+  "longitude": 4.6,
+    "latitude": 50.3
+},
+{
+  "id": 7,
+  "longitude": 4.371700,
+    "latitude": 50.8465575
+},
+{
+  "id": 8,
+  "longitude": 4.53,
+    "latitude": 50.62
+},
+{
+  "id": 9,
+  "longitude": 4.15,
+    "latitude": 50.32
+}]

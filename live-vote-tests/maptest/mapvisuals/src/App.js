@@ -1,4 +1,4 @@
-import Map from'./components/mapbox'
+import Map from'./components/MapVisual/Map'
 
 
 function App() {
