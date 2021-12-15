@@ -10,12 +10,19 @@ export function translate(element) {
 export function resize(element) {
   anime({
     targets: element,
-    scale: 1.5,
-    translateX: 300,
-    backgroundColor: "hsl(200, 50%, 50%)",
+    scale: 1.2,
+    translateX: 200,
+    borderRadius:  '0',
     easing: 'easeInOutQuad',
     translate: 0
    
   });
+}
+export function show(element) {
+  anime({
+    targets: element,
+    opacity: 1
+  })
+  
 }
 

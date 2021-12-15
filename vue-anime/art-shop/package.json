@@ -12,7 +12,8 @@
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-animejs": "^2.1.1"
+    "vue-animejs": "^2.1.1",
+    "vue-picture-swipe": "^2.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

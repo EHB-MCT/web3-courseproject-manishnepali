@@ -1,20 +1,21 @@
 <template>
 <link rel="stylesheet" href="https://use.typekit.net/ljg4uqb.css" />
-<div>
-<artlist class="artlist"/>
-</div>
+<navbar></navbar>
+<artlist></artlist>
 
 </template>
 
 <script>
 import Artlist from './components/Artlist.vue'
+import Navbar from './components/Navbar.vue'
 
 
 
 export default {
   name: 'App',
   components: {
-    Artlist
+    Artlist,
+    Navbar
 
   },
   data() {
