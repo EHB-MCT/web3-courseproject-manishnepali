@@ -7,6 +7,7 @@ import {useState} from 'react';
 import Aboutme from './Aboutme';
 import MySkills from './MySkills';
 import Projects from './Projects';
+import Contact from './Contact';
 import React, { PureComponent } from 'react';
 
 
@@ -35,16 +36,16 @@ const [color, setColor] = useState('#000000');
         </div>
         <div id="nav">
             <ul>
-                <li >About me</li>
-                <li>My skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li > <a href="#aboutme"> About me </a></li>
+                <li><a href="#myskills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <Aboutme />
         <MySkills />
         <Projects />
-       
+       <Contact />
       </div>
       
     );

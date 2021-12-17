@@ -16,8 +16,7 @@ function Projects() {
       <h1 >Projects</h1>
       <Router>
       <span
-      id='route'
-      style={{backgroundColor: "black"}}> 
+      id='route'> 
             <p><Link to="/webDev"
             > web development </Link> </p>
        <p> <Link to="/desVid"
