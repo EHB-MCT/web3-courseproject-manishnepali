@@ -9,6 +9,7 @@ import MySkills from './MySkills';
 import Projects from './Projects';
 import React, { PureComponent } from 'react';
 
+
 function OnePager() {
 const [image, setImage] = useState(backgroundBsc);
 const [color, setColor] = useState('#000000');
@@ -43,6 +44,7 @@ const [color, setColor] = useState('#000000');
         <Aboutme />
         <MySkills />
         <Projects />
+       
       </div>
       
     );
