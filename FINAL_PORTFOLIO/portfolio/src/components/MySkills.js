@@ -27,9 +27,9 @@ function MySkills(){
     return entry.name;
 }
   return (
-    <div className="myskills">
-     <div className="OnePager"
-     style={{backgroundColor: '#6c7a89'}}>
+    <div id="myskills"
+    className="OnePager">
+
       <h1>My skills</h1>
    
      <PieChart width={1200} height={500} id="chart">
@@ -75,7 +75,7 @@ function MySkills(){
         </PieChart>
         
      </div>
-    </div>
+  
   );
 }
 

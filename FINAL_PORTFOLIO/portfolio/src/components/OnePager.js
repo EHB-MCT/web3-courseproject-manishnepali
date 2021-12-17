@@ -6,6 +6,7 @@ import artwork from '../assets/artwork.webp';
 import {useState} from 'react';
 import Aboutme from './Aboutme';
 import MySkills from './MySkills';
+import Projects from './Projects';
 import React, { PureComponent } from 'react';
 
 function OnePager() {
@@ -41,6 +42,7 @@ const [color, setColor] = useState('#000000');
         </div>
         <Aboutme />
         <MySkills />
+        <Projects />
       </div>
       
     );
