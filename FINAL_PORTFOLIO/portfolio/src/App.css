@@ -8,7 +8,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+
 }
+
+#nameCard h3, #nameCard h1{
+  background: transparent;
+  backdrop-filter: blur(50px);
+} 
 #naam{
   font-family: cooper-black-std,serif;
   font-weight: 400;
@@ -40,10 +46,7 @@ text-align: justify;
     font-size: 2em;
     font-weight: 200;
   }
-  #aboutme h1{
-    
 
-  }
   p, a{
     font-family: gopher, sans-serif;
   color: #002A15;

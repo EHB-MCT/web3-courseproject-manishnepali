@@ -9,6 +9,8 @@ import MySkills from './MySkills';
 import Projects from './Projects';
 import Contact from './Contact';
 import React, { PureComponent } from 'react';
+import ScrollButton from 'react-scroll-button'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 function OnePager() {
@@ -20,27 +22,62 @@ const [color, setColor] = useState('#000000');
       <div className="OnePager">
           <div id="nameCard" 
           style={{backgroundImage: `url(${image})`,
-          transition: `0.5s`}}>
+          transition: `0.8s`}}>
        <h1 id="naam">Manish Nepali</h1>
     
       <h3 class="info" 
        onMouseEnter={()=>{ setImage(programing)}}
-       onMouseLeave={()=>{ setImage(backgroundBsc)}}>Frontend Developer</h3>
-
-        <h3 class="info"
-        onMouseEnter={()=>{ setImage(design)}}
-        onMouseLeave={()=>{ setImage(backgroundBsc)}}>Web designer</h3>
+       onMouseLeave={()=>{ setImage(backgroundBsc)}}>Web Developer</h3>
         <h3 class="info"
         onMouseEnter={()=>{ setImage(artwork)}}
-        onMouseLeave={()=>{ setImage(backgroundBsc)}}>adobe designer</h3>
+        onMouseLeave={()=>{ setImage(backgroundBsc)}}>Digital Artist</h3>
         </div>
         <div id="nav">
             <ul>
-                <li > <a href="#aboutme"> About me </a></li>
-                <li><a href="#myskills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            
+                <li > <Link
+                    activeClass="active"
+                    to="aboutme"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >About me  </Link></li>
+               <li > <Link
+                    activeClass="active"
+                    to="myskills"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >My skills  </Link></li>
+                <li > <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >Projects </Link></li>
+                <li > <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >Contact </Link></li>
+                
             </ul>
+          
+            <ScrollButton 
+                behavior={'smooth'} 
+                buttonBackgroundColor={'green'}
+                iconType={'chevron-up'}
+                style= {{fontSize: '24px'}}
+                targetId= {'nameCard'}
+            /> 
+           
         </div>
         <Aboutme />
         <MySkills />
