@@ -26,7 +26,7 @@ function Projects() {
     <Switch>
              <Route exact path="/">
              <p
-                 style={{width : '60%', fontSize: "2em", marginLeft: "20%", marginTop: "5%"}}>Choose which projects you want to browse through, 
+                 style={{width : '60%', fontSize: "2em", marginLeft: "20%"}}>Choose which projects you want to browse through, 
                     Web development contains web projects that are made with javascript frameworks and libraries.
                     Designs and videos are a showcase of projects that were made with Adobe software like Illustrator and After effects.</p>
                  
