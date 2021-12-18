@@ -27,12 +27,14 @@ const designs = [
     ];
 
   return (
-    <div id="designs"> 
+    <div id="designs"
+    style={{overflow: "auto"}}> 
       <h2
       style={{marginLeft: "20%"}}>
         Illustrator designs
       </h2>
-      <ul class="projectList">
+      <ul class="projectList"
+      >
       {designs.map((design, index) => {
         return <li key={index} 
       id="designlist"

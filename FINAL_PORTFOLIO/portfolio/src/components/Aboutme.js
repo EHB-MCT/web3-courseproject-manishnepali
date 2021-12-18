@@ -28,9 +28,9 @@ function Aboutme() {
               borderRadius: "50%"}}/>
               <span>
               <h1>About me</h1>
-            <p id="test" style={{fontSize: `1.5em`}}>Im a web developer, designer based in Brussels, Belguim. <br/>
-              Browse through this website to get to kown more about why i have chosen to become a web developer. <br/>
-              Discover projects i have made during my studies at multimedia & comunication technomlogy in Erasmus Hogeschool Buussel.
+            <p id="test" style={{fontSize: `2em`}}>I'm a web developer, designer based in Brussels, Belgium. <br/>
+              Browse through this website to get to know more about why I have chosen to become a web developer. <br/>
+              Discover projects I have made during my studies at multimedia and communication technology in Erasmus Hogeschool Brussel.
             </p>
             </span>
             </div>

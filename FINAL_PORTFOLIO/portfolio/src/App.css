@@ -7,7 +7,7 @@
   background-color: #e2f1f88a;
   background-repeat: no-repeat;
   background-size: cover;
- 
+
 }
 #naam{
   font-family: cooper-black-std,serif;
@@ -147,7 +147,7 @@ text-align: justify;
 #projects{
   display: flex;
   flex-direction: column;
-
+  height: 100vh;
 }
 #projects a{
   color: white;
@@ -156,7 +156,7 @@ text-align: justify;
 
 }
 
-#projects h2{
+#projects h2, #contact h2{
   margin-left: 20%;
   align-content: center;
 }
@@ -188,8 +188,13 @@ text-align: justify;
   color: red;
   font-size: 2em;
 }
+#contact {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
 #form{
-margin-left: 30%;
+  margin-left: 10%;
   border-radius: 20px;
   width: 30%;
   padding: 10%;
@@ -197,7 +202,7 @@ margin-left: 30%;
   text-align: center;
 }
 form{
-
+  
   display: flex;
   flex-direction: column;
   
