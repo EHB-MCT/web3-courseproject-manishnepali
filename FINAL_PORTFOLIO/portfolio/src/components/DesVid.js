@@ -9,7 +9,8 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 function DesVid() {
 
   return (
-    <div id="projects">
+    <div id="projects"
+    style={{overflow: "auto"}}>
       
       
          <h2>design and video</h2>
