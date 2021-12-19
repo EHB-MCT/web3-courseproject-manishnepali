@@ -17,7 +17,7 @@ function Aboutme() {
   
      
       <Controller>
-          <Scene duration={100} pin>
+          <Scene duration={200} pin>
       
            
        

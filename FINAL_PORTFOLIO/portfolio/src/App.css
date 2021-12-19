@@ -246,7 +246,13 @@
   #test {
     font-size: 2em;
   }
-  @media only screen and (max-width: 380px) {
+  #projectText{
+    font-size: "2em";
+  }
+  @media only screen and (max-width: 600px) {
+    .OnePager{
+      height: 120vh;
+    }
     #naam {
       font-size: 2em;
     
@@ -255,7 +261,7 @@
       font-size: 1.6em;
     }
     #aboutme{
-  top: 0;
+margin-top: 40%;
     }
     #aboutme_info{
     
@@ -274,6 +280,9 @@
     h1{
       font-size: 2em;
     }
+    p{
+      font-size: 1em;
+    }
     #test{
       font-size: 1em;
       width: 80vw;
@@ -291,11 +300,17 @@
   .projectItem{
     width: 60vw;
   }
+  #projectText{
+    font-size: 1em;
+  }
   #contact{
     flex-direction: column;
   }
   #form{
     width: 60vw;
+  }
+  #contactPage{
+   background-color: "#e2f1f88a";
   }
   }
 
